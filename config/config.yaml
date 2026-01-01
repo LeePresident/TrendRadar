@@ -13,7 +13,7 @@ app:
   #   - America/New_York (美东时间 UTC-5/-4)
   #   - Europe/London (伦敦时间 UTC+0/+1)
   # 完整时区列表: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-  timezone: "Asia/Hong_Kong"
+  timezone: "Asia/Shanghai"
   show_version_update: true           # 显示版本更新提示
 
 
@@ -133,6 +133,9 @@ rss:
 # ===============================================================
 report:
   mode: "daily"                     # 可选: daily | current | incremental
+  display_mode: "keyword"             # 可选: keyword | platform
+                                      # keyword: 按关键词分组显示（默认）
+                                      # platform: 按平台/来源分组显示
   rank_threshold: 5                   # 排名高亮阈值
   sort_by_position_first: false       # true=按配置位置排序，false=按热点条数排序
   max_news_per_keyword: 0             # 每个关键词最大显示数量（0=不限制）
@@ -224,7 +227,7 @@ storage:
   formats:
     sqlite: true                      # 主存储（必须启用）
     txt: false                        # 是否生成 TXT 快照
-    html: true                       # 是否生成 HTML 报告（⚠️ 邮件推送必须设为 true）
+    html: false                       # 是否生成 HTML 报告（⚠️ 邮件推送必须设为 true）
 
   # 本地存储配置
   local:
