@@ -1,9 +1,6 @@
-DeepSeek
-梁文锋
+/DeepSeek|梁文锋/i => DeepSeek
 
-华为
-鸿蒙
-HarmonyOS
+/华为|鸿蒙|HarmonyOS|任正非/i => 华为
 
 荣耀
 +手机
@@ -18,44 +15,29 @@ VIVO
 美光
 SK海力士
 
-比亚迪
-王传福
+/比亚迪|王传福/ => 比亚迪
 
-大疆
-DJI
+/大疆|\bDJI\b/i => 大疆
 
-特斯拉
-马斯克
+/字节|bytedance|张一鸣/i => 字节跳动
 
-微软
-Microsoft
+/特斯拉|马斯克/ => 特斯拉
 
-英伟达
-NVIDIA
-黄仁勋
+/微软|\bMicrosoft\b/i => 微软
 
-AMD
+/英伟达|\bNVIDIA\b|黄仁勋/i => 英伟达
 
-谷歌
-google
-gemini
-deepmind
+/\bAMD\b/i => AMD
 
-chatgpt
-openai
-sora
+/谷歌|\bgoogle\b|\bgemini\b|\bdeepMind\b/i => 谷歌
 
-claude
-Anthropic
+/\bchatgpt\b|\bopenai\b|\bsora\b/i => OpenAI
 
-iphone
-ipad
-mac
-ios
+/\bclaude\b|Anthropic/i => Claude
 
-ai
-!gai
-人工智能
+/\biphone\b|\bipad\b|\bmac\b|\bios\b/i => 苹果产品
+
+/(?<![a-zA-Z])ai(?![a-zA-Z])/i => AI 相关
 
 中国
 内地
