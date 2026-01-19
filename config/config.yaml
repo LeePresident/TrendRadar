@@ -89,6 +89,7 @@ rss:
   #    - 只有新鲜的文章会被推送到通知渠道
   freshness_filter:
     enabled: true                     # 是否启用新鲜度过滤（默认启用）
+
     max_age_days: 3                   # 最大文章年龄（天）
                                       # - 正整数：只推送 N 天内的文章
                                       # - 0：禁用过滤，推送所有文章
@@ -309,6 +310,7 @@ storage:
   # 建议将敏感信息配置在 GitHub Secrets 或环境变量中
   remote:
     retention_days: 7                 # 保留天数（0=永久保留）
+
     # S3 兼容配置（或使用环境变量 S3_ENDPOINT_URL 等）
     endpoint_url: ""                  # 服务端点
                                       # Cloudflare R2: https://<account_id>.r2.cloudflarestorage.com
@@ -343,7 +345,7 @@ ai:
   # 完整列表: https://docs.litellm.ai/docs/providers
   # 如果你对于看英文文档比较头疼，那么可以点击页面右下角的 【Ask AI】 ,用中文询问怎么配置 
   
-  model: "deepseek/deepseek-chat"
+  model: "openrouter/qwen/qwen3-coder:free"
 
   api_key: ""                       # API Key（建议使用环境变量 AI_API_KEY）
   
